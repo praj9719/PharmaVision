@@ -1,0 +1,9 @@
+Medicine5 Name
+@
+Medicine5 Genetic Name
+@
+Medicine5 Used for
+@
+Medicine5 Side effects
+@
+Medicine5 price

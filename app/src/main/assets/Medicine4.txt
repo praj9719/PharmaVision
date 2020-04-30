@@ -1,0 +1,9 @@
+Medicine4 Name
+@
+Medicine4 Genetic Name
+@
+Medicine4 Used for
+@
+Medicine4 Side effects
+@
+Medicine4 price

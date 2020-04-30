@@ -1,0 +1,9 @@
+Medicine2 Name
+@
+Medicine2 Genetic Name
+@
+Medicine2 Used for
+@
+Medicine2 Side effects
+@
+Medicine2 price

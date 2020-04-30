@@ -1,0 +1,9 @@
+Medicine3 Name
+@
+Medicine3 Genetic Name
+@
+Medicine3 Used for
+@
+Medicine3 Side effects
+@
+Medicine3 price
