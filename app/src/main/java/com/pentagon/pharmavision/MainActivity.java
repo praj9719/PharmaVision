@@ -32,16 +32,14 @@ public class MainActivity extends AppCompatActivity {
     private SurfaceView mCameraView;
     private TextView mResult, mName, mGenName, mPrice, mUse, mSideEff;
     private Button mClick;
-    private String[] Medicines = {"Zaroxolyn", "Medicine2", "Medicine3", "Medicine4", "Medicine5"};
-    private String[] Result;
-
-    public MainActivity() {
-    }
+    private String[] Medicines = {"Zaroxolyn", "Medicine2", "Medicine3", "Medicine4", "Medicine5"}; //Available medicines
+    private String[] Result;    //Array of output Strings
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        // define attributes
         mCameraView = findViewById(R.id.activity_main_surface_view);
         mResult = findViewById(R.id.activity_main_text_view_result);
         mName = findViewById(R.id.activity_main_text_view_name);
@@ -59,6 +57,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+    //start camera view and detect text
     private void startCameraSource() {
         final TextRecognizer textRecognizer = new TextRecognizer.Builder(getApplicationContext()).build();
         if (!textRecognizer.isOperational()){
@@ -123,6 +122,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    //compare result with medicines
     private void getResult(){
         if (Result.length != 0){
             boolean Found = false;
@@ -141,6 +141,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    //display result on screen
     private void result(String result){
         String text = "";
         mName.setText(result);
@@ -162,9 +163,6 @@ public class MainActivity extends AppCompatActivity {
         }else {
             Toast.makeText(this, "Insufficient data", Toast.LENGTH_SHORT).show();
         }
-        //mUse.setText(med[0]);
-        //mGenName.setText(med[1]);
-        //mPrice.setText(med[2]);
     }
 
     @Override
